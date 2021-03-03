@@ -1,2 +1,5 @@
+# IntelliJ:
 .idea/
-Java_Training.iml
+*.iml
+# Maven:
+target/
