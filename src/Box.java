@@ -3,6 +3,8 @@ public class Box {
     double height;
     double length;
 
-
-
+    double Volume(){
+        return width * height * length;
+    }
 }
+
