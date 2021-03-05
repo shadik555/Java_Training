@@ -1,3 +1,4 @@
+package HomeWork_15;
 public class Box {
     double width;
     double height;
@@ -26,18 +27,19 @@ public class Box {
         this.length=box.length;
         this.height=box.height;
     }
-
-    Box increase(int i){
-        return new Box(width*i,height*i,length*i);
-
+    Box(Box box1, Box box2){
+       this.width = box1.width+ box2.width;
+       this.length= box1.length+box2.length;
+       this.height= box1.height+box2.height;
     }
 
+    Box increase(int i){ return new Box(width*i,height*i,length*i); }
     void setDimens(double width, double height, double length) {
         this.height = height;
         this.width = width;
-        this.length = length;
-    }
+        this.length = length; }
 
+    Box sumBox(Box box) {return new Box (this.width+box.width, this.height+ box.height, this.length+box.length);}
     double Volume() { return width * height * length; }
     void showVolume(){    //Вызывает метод Volume.
         System.out.println(Volume());
@@ -57,4 +59,3 @@ public class Box {
         return result;
     }
 }
-
