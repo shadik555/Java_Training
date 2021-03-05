@@ -1,4 +1,4 @@
-package HomeWork12;
+package HomeWork_12;
 
 public class Rect {
     double lenght;
