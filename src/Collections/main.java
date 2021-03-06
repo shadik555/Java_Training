@@ -1,20 +1,19 @@
 package Collections;
 
+import java.util.ArrayList;
+
 public class main {
     public static void main(String[] args) {
-        MyArrayList employees = new MyArrayList();
-        employees.add("Никита");
-        employees.add("Игорь");
-        employees.add("Ваня");
-        employees.add("Максим");
-        employees.add("Ирина");
-        employees.add("Viktorya");
-        employees.remove("Ирина");
-        employees.remove("Никита");
 
-        for(int i = 0; i < employees.getSize(); i++){
-            System.out.println(employees.get(i));
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for(int i = 0; i < 1000; i ++ ){
+            numbers.add(i);
         }
+        int sum = 0;
+        for(int i : numbers){
+            sum += i;
+        }
+        System.out.println(sum);
 
     }
 }
